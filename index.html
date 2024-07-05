@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\final portfolio website\IMAGES\image0.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="message-box">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Hello and thank you for visiting my portfolio website. Here, you'll find a showcase of my work, skills, and projects that reflect my journey and passion in Graphic design.<br>NB: I am a junior web designer and decided to create my own portfolio website. In case of any missing information, feel free to reach out through the contact section if you have any questions or opportunities you'd like to discuss.</p>
+                <a href="#portfolio" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="gallery">
+                <div class="gallery-item squircle">
+                    <div class="project-images">
+                        <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\final portfolio website\IMAGES\marcos food menu.jpg1.0.jpg" alt="Project 1 Image 1" onclick="openPopup('path/to/image1.jpg')">
+                        <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\final portfolio website\IMAGES\marcos DRINKS menu.jpg" alt="Project 1 Image 2" onclick="openPopup('path/to/image2.jpg')">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Project Title 1</h3>
+                        <p>Short description of the project.</p>
+                        <a href="project1.html" class="btn">More Information</a>
+                    </div>
+                </div>
+                <div class="gallery-item squircle">
+                    <div class="project-images">
+                        <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\final portfolio website\IMAGES\Auto shine.png" alt="Project 2 Image 1" onclick="openPopup('path/to/image3.jpg')">
+                        <img src="path/to/image4.jpg" alt="Project 2 Image 2" onclick="openPopup('path/to/image4.jpg')">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Project Title 2</h3>
+                        <p>Short description of the project.</p>
+                        <a href="project2.html" class="btn">More Information</a>
+                    </div>
+                </div>
+                <div class="gallery-item squircle">
+                    <div class="project-images">
+                        <img src="path/to/image5.jpg" alt="Project 3 Image 1" onclick="openPopup('path/to/image5.jpg')">
+                        <img src="path/to/image6.jpg" alt="Project 3 Image 2" onclick="openPopup('path/to/image6.jpg')">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Project Title 3</h3>
+                        <p>Short description of the project.</p>
+                        <a href="project3.html" class="btn">More Information</a>
+                    </div>
+                </div>
+                <div class="gallery-item squircle">
+                    <div class="project-images">
+                        <img src="path/to/image7.jpg" alt="Project 4 Image 1" onclick="openPopup('path/to/image7.jpg')">
+                        <img src="path/to/image8.jpg" alt="Project 4 Image 2" onclick="openPopup('path/to/image8.jpg')">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Project Title 4</h3>
+                        <p>Short description of the project.</p>
+                        <a href="project4.html" class="btn">More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://www.facebook.com" target="_blank"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://wa.me/your-number" target="_blank"><img src="path/to/whatsapp-icon.png" alt="WhatsApp"></a>
+                <a href="mailto:your-email@example.com" target="_blank"><img src="path/to/email-icon.png" alt="Email"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fusion. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="imagePopup" class="popup">
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+        <img src="" alt="Popup Image" id="popupImage">
+    </div>
+
+    <script>
+        function openPopup(imageSrc) {
+            document.getElementById('popupImage').src = imageSrc;
+            document.getElementById('imagePopup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('imagePopup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
